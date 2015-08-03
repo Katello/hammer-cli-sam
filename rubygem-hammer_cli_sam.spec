@@ -8,7 +8,7 @@
 %global gem_instdir %{gem_dir}/gems/%{gem_name}-%{version}
 Summary: SAM commands for Hammer
 Name: rubygem-%{gem_name}
-Version: 1.0.0
+Version: 1.0.1
 Release: 1%{?dist}
 Group: Development/Languages
 License: GPLv3
@@ -65,6 +65,10 @@ cp -pa .%{gem_dir}/* \
 %doc %{gem_dir}/doc/%{gem_name}-%{version}
 
 %changelog
+* Mon Aug 03 2015 Adam Price <komidore64@gmail.com> 1.0.1-1
+- Move config file into config directory and deploy via gem.
+  (ericdhelms@gmail.com)
+
 * Wed Mar 04 2015 Adam Price <komidore64@gmail.com> 1.0.0-1
 - new package built with tito
 
